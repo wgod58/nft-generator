@@ -1,5 +1,3 @@
-const { rarities } = require("./config.js");
-
 // For Shuffle and Random
 function shuffle(array) {
   // refference: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
@@ -36,11 +34,15 @@ const Randomize = (layer) => {
   }
   shuffle(considerList);
 
+
+  console.log(layer.name);
+  console.log(considerList.length);
+  console.log(JSON.stringify(considerList));
   let index = Math.floor(Math.random() * parseInt(considerList.length));
 
   let randElementNum = considerList[index];
 
-  return randElementNum - 1;
+  return layer.elements[randElementNum - 1];
 };
 
 module.exports = { Randomize };

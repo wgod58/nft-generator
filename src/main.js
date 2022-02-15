@@ -35,7 +35,6 @@ const addRarity = (_str) => {
 
 const addPossibility = (_str) => {
   let itemRarity;
-
   rarities.forEach((rarity) => {
     if (_str.includes(rarity.key)) {
       itemRarity = rarity.possibility;
@@ -118,7 +117,9 @@ const addAttributes = (_element, _layer) => {
     value: _element.name,
     rarity: _element.rarity,
   };
-  attributes.push(tempAttr);
+  if (tempAttr.value !== "empty") {
+    attributes.push(tempAttr);
+  }
   hash.push(_layer.id);
   hash.push(_element.id);
   decodedHash.push({ [_layer.id]: _element.id });
@@ -145,7 +146,7 @@ const createFiles = async (edition) => {
   let numDupes = 0;
   for (let i = 1; i <= edition; i++) {
     await layers.forEach(async (layer) => {
-      let randomElement = layer.elements[Randomize(layer)];
+      let randomElement = Randomize(layer);
       await drawLayer(layer, randomElement, i);
     });
 

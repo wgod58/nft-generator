@@ -1,10 +1,16 @@
 const layersOrder = [
   { name: "background", number: 13 },
   { name: "skin", number: 3 },
-  { name: "cloth", number: 32 },
-  { name: "mouth", number: 14 },
-  { name: "eye", number: 6 },
-  { name: "hair", number: 6 },
+  { name: "cloth", number: 24 },
+  { name: "necklace", number: 5 },
+  { name: "jacket", number: 11 },
+  { name: "eye", number: 9 },
+  { name: "glasses", number: 3 },
+  { name: "nose", number: 1 },
+  { name: "mouth", number: 15 },
+  { name: "hair", number: 7 },
+  { name: "hat", number: 6 },
+  { name: "hand", number: 3 },
 ];
 
 const format = {
@@ -14,6 +20,9 @@ const format = {
 
 const rarities = [
   { key: "", val: "normal", possibility: 42 },
+  { key: "_big", val: "big", possibility: 300 },
+  { key: "_bb", val: "bb", possibility: 900 },
+  { key: "_xxb", val: "xxb", possibility: 2500 },
   { key: "_r", val: "rare", possibility: 33 },
   { key: "_sr", val: "epic", possibility: 19 },
   { key: "_ssr", val: "legendary", possibility: 5 },
