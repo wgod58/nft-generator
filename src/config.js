@@ -1,16 +1,15 @@
 const layersOrder = [
-  { name: "background", number: 1 },
-  { name: "ball", number: 2 },
-  { name: "eye color", number: 12 },
-  { name: "iris", number: 3 },
-  { name: "shine", number: 1 },
-  { name: "bottom lid", number: 3 },
-  { name: "top lid", number: 3 },
+  { name: "background", number: 13 },
+  { name: "skin", number: 3 },
+  { name: "cloth", number: 32 },
+  { name: "mouth", number: 14 },
+  { name: "eye", number: 6 },
+  { name: "hair", number: 6 },
 ];
 
 const format = {
-  width: 230,
-  height: 230,
+  width: 2048,
+  height: 2048,
 };
 
 const rarities = [
