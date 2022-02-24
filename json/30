@@ -1,0 +1,45 @@
+{
+  "image": "ipfs://QmY7gTMqx6r6MPU2hstGLLYqPnWns1aEiFtoCG54nBdcpk/30.png",
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "IMG_3097"
+    },
+    {
+      "trait_type": "skin",
+      "value": "white"
+    },
+    {
+      "trait_type": "necklace",
+      "value": "IMG_3270"
+    },
+    {
+      "trait_type": "eye",
+      "value": "IMG_3327"
+    },
+    {
+      "trait_type": "nose",
+      "value": "IMG_3307"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "IMG_3149"
+    },
+    {
+      "trait_type": "hair",
+      "value": "IMG_3410"
+    },
+    {
+      "trait_type": "earrings",
+      "value": "IMG_3595"
+    },
+    {
+      "trait_type": "hand",
+      "value": "white"
+    },
+    {
+      "trait_type": "watch",
+      "value": "IMG_3499"
+    }
+  ]
+}

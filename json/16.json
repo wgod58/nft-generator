@@ -1,0 +1,68 @@
+{
+  "hash": "01213213541576397183913",
+  "edition": 16,
+  "date": 1645711770556,
+  "attributes": [
+    {
+      "id": 12,
+      "trait_type": "background",
+      "value": "IMG_3102",
+      "rarity": "normal"
+    },
+    {
+      "id": 3,
+      "trait_type": "skin",
+      "value": "yellow",
+      "rarity": "normal"
+    },
+    {
+      "id": 1,
+      "trait_type": "necklace",
+      "value": "IMG_3270",
+      "rarity": "normal"
+    },
+    {
+      "id": 5,
+      "trait_type": "eye",
+      "value": "IMG_3327",
+      "rarity": "normal"
+    },
+    {
+      "id": 1,
+      "trait_type": "nose",
+      "value": "IMG_3307",
+      "rarity": "normal"
+    },
+    {
+      "id": 7,
+      "trait_type": "mouth",
+      "value": "IMG_3151",
+      "rarity": "normal"
+    },
+    {
+      "id": 39,
+      "trait_type": "hair",
+      "value": "IMG_3416",
+      "rarity": "normal"
+    },
+    {
+      "id": 1,
+      "trait_type": "earrings",
+      "value": "IMG_3350",
+      "rarity": "normal"
+    },
+    {
+      "id": 3,
+      "trait_type": "hand",
+      "value": "yellow",
+      "rarity": "normal"
+    },
+    {
+      "id": 13,
+      "trait_type": "watch",
+      "value": "IMG_3504",
+      "rarity": "normal"
+    }
+  ],
+  "image": "https://ipfs.io/ipfs/QmY7gTMqx6r6MPU2hstGLLYqPnWns1aEiFtoCG54nBdcpk/16.png"
+}

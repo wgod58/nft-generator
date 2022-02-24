@@ -20,9 +20,18 @@ function shuffle(array) {
   return array;
 }
 
+let skinChoseId;
 const Randomize = (layer) => {
   let total = layer.number;
   let considerList = [];
+
+  // console.log(layer);
+  // body layer.id = 1 layer.element[0] black
+  // layer.id === 8 hand
+  if (layer.name === "hand") {
+    return skinChoseId;
+  }
+
   for (let i = 0; i < total; i++) {
     const possibility = layer.elements[i].possibility;
 
@@ -34,15 +43,49 @@ const Randomize = (layer) => {
   }
   shuffle(considerList);
 
-
-  console.log(layer.name);
-  console.log(considerList.length);
-  console.log(JSON.stringify(considerList));
   let index = Math.floor(Math.random() * parseInt(considerList.length));
 
   let randElementNum = considerList[index];
 
-  return layer.elements[randElementNum - 1];
+  const result = layer.elements[randElementNum - 1];
+
+  if (layer.name === "skin") {
+    skinChoseId = result;
+  }
+
+  return result;
 };
 
 module.exports = { Randomize };
+
+// {
+//   id: 1,
+//   name: 'skin',
+//   location: '/Users/zeddpai/Documents/workspace/generative-art-node/layers/skin/',
+//   elements: [
+//     {
+//       id: 1,
+//       name: 'black',
+//       fileName: 'black.PNG',
+//       rarity: 'normal',
+//       possibility: 42
+//     },
+//     {
+//       id: 2,
+//       name: 'white',
+//       fileName: 'white.PNG',
+//       rarity: 'normal',
+//       possibility: 42
+//     },
+//     {
+//       id: 3,
+//       name: 'yellow',
+//       fileName: 'yellow.PNG',
+//       rarity: 'normal',
+//       possibility: 42
+//     }
+//   ],
+//   position: { x: 0, y: 0 },
+//   size: { width: 2048, height: 2048 },
+//   number: 3
+// }
