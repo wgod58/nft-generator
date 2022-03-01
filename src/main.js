@@ -117,18 +117,21 @@ const addAttributes = (_element, _layer) => {
     value: _element.name,
     rarity: _element.rarity,
   };
-  if (tempAttr.value !== "empty") {
+  if (
+    tempAttr.value.toLowerCase() !== "empty" &&
+    tempAttr.value.toLowerCase() !== "nose"
+  ) {
     attributes.push(tempAttr);
   }
-  hash.push(_layer.id);
-  hash.push(_element.id);
   decodedHash.push({ [_layer.id]: _element.id });
 };
 
-const drawLayer = async (_layer, _element, _edition) => {
-  if (_element) {
-    addAttributes(_element, _layer);
-    const image = await loadImage(`${_layer.location}${_element.fileName}`);
+const drawLayer = async (_layer, _edition) => {
+  if (_layer.selectElement) {
+    addAttributes(_layer.selectElement, _layer);
+    const image = await loadImage(
+      `${_layer.location}${_layer.selectElement.fileName}`
+    );
 
     ctx.drawImage(
       image,
@@ -143,11 +146,17 @@ const drawLayer = async (_layer, _element, _edition) => {
 
 const createFiles = async (edition) => {
   const layers = layersSetup(layersOrder);
+
   let numDupes = 0;
   for (let i = 1; i <= edition; i++) {
-    await layers.forEach(async (layer) => {
+    hash = [];
+    const selectLayers = [];
+    await layers.forEach(async (layer, index) => {
       let randomElement = Randomize(layer);
-      await drawLayer(layer, randomElement, i);
+      layer.selectElement = randomElement;
+      selectLayers.push(layer);
+      hash.push(index);
+      hash.push(randomElement.id);
     });
 
     let key = hash.toString();
@@ -157,11 +166,15 @@ const createFiles = async (edition) => {
           key
         )}`
       );
+
       numDupes++;
       if (numDupes > edition) break; //prevents infinite loop if no more unique items can be created
       i--;
     } else {
       Exists.set(key, i);
+      await selectLayers.forEach(async (_layer) => {
+        await drawLayer(_layer, i);
+      });
       addMetadata(i);
       console.log("Creating edition " + i);
     }

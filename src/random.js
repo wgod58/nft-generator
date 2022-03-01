@@ -28,8 +28,53 @@ const Randomize = (layer) => {
   // console.log(layer);
   // body layer.id = 1 layer.element[0] black
   // layer.id === 8 hand
+
   if (layer.name === "hand") {
-    return skinChoseId;
+    return layer.elements[skinChoseId - 1];
+  }
+
+  if (layer.name === "background") {
+    return layer.elements[5];
+  }
+  if (layer.name === "cloth") {
+    return layer.elements[1];
+  }
+  if (layer.name === "earrings") {
+    return layer.elements[0];
+  }
+  if (layer.name === "eye") {
+    return layer.elements[4];
+  }
+  // if (layer.name === "glasses") {
+  //   return layer.elements[0];
+  // }
+  if (layer.name === "hair") {
+    return layer.elements[10];
+  }
+  // if (layer.name === "hat") {
+  //   return layer.elements[2];
+  // }
+  if (layer.name === "jacket") {
+    return layer.elements[10];
+  }
+  if (layer.name === "mouth") {
+    // return layer.elements[3];
+    return layer.elements[12];
+  }
+  if (layer.name === "necklace") {
+    return layer.elements[6];
+  }
+  if (layer.name === "skin") {
+    const chose = layer.elements[3];
+    skinChoseId = chose.id;
+    return chose;
+  }
+  // if (layer.name === "tie") {
+  //   return layer.elements[2];
+  // }
+  if (layer.name === "watch") {
+    // console.log(layer);
+    return layer.elements[12];
   }
 
   for (let i = 0; i < total; i++) {
@@ -50,7 +95,7 @@ const Randomize = (layer) => {
   const result = layer.elements[randElementNum - 1];
 
   if (layer.name === "skin") {
-    skinChoseId = result;
+    skinChoseId = result.id;
   }
 
   return result;
