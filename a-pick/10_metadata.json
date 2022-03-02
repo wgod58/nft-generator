@@ -1,0 +1,57 @@
+[
+  {
+    "hash": "03112332041517617184",
+    "edition": 1,
+    "date": 1646252347806,
+    "attributes": [
+      {
+        "id": 3,
+        "trait_type": "background",
+        "value": "Indigo",
+        "rarity": "normal"
+      },
+      {
+        "id": 1,
+        "trait_type": "skin",
+        "value": "Beige",
+        "rarity": "normal"
+      },
+      {
+        "id": 3,
+        "trait_type": "cloth",
+        "value": "Orange Floral Shirt",
+        "rarity": "normal"
+      },
+      {
+        "id": 20,
+        "trait_type": "eye",
+        "value": "Brown Dismissive",
+        "rarity": "normal"
+      },
+      {
+        "id": 17,
+        "trait_type": "mouth",
+        "value": "Twig",
+        "rarity": "normal"
+      },
+      {
+        "id": 1,
+        "trait_type": "hair",
+        "value": "Brown Long Center Parting",
+        "rarity": "normal"
+      },
+      {
+        "id": 1,
+        "trait_type": "hand",
+        "value": "Beige",
+        "rarity": "normal"
+      },
+      {
+        "id": 4,
+        "trait_type": "bracelet",
+        "value": "Gold Tiger Black Bracelet",
+        "rarity": "normal"
+      }
+    ]
+  }
+]

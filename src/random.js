@@ -34,38 +34,48 @@ const Randomize = (layer) => {
   }
 
   if (layer.name === "background") {
+    return layer.elements[3];
+  }
+  // if (layer.name === "bracelet") {
+  //   // console.log(layer);
+  //   return layer.elements[2];
+  // }
+  if (layer.name === "cloth") {
     return layer.elements[5];
   }
-  if (layer.name === "cloth") {
-    return layer.elements[1];
-  }
-  if (layer.name === "earrings") {
-    return layer.elements[0];
-  }
-  if (layer.name === "eye") {
-    return layer.elements[4];
-  }
-  // if (layer.name === "glasses") {
+  // if (layer.name === "earrings") {
   //   return layer.elements[0];
   // }
-  if (layer.name === "hair") {
-    return layer.elements[10];
+  if (layer.name === "eye") {
+    const found = layer.elements.find(
+      (element) => element.name === "Black Directly"
+    );
+
+    console.log(found);
+    
+    return found;
   }
+  // if (layer.name === "glasses") {
+  //   return layer.elements[3];
+  // }
+  // if (layer.name === "hair") {
+  //   return layer.elements[0];
+  // }
   // if (layer.name === "hat") {
   //   return layer.elements[2];
   // }
   if (layer.name === "jacket") {
-    return layer.elements[10];
+    return layer.elements[1];
   }
   if (layer.name === "mouth") {
     // return layer.elements[3];
-    return layer.elements[12];
+    return layer.elements[0];
   }
-  if (layer.name === "necklace") {
-    return layer.elements[6];
-  }
+  // if (layer.name === "necklace") {
+  //   return layer.elements[5];
+  // }
   if (layer.name === "skin") {
-    const chose = layer.elements[3];
+    const chose = layer.elements[2];
     skinChoseId = chose.id;
     return chose;
   }
@@ -73,8 +83,13 @@ const Randomize = (layer) => {
   //   return layer.elements[2];
   // }
   if (layer.name === "watch") {
-    // console.log(layer);
-    return layer.elements[12];
+    const found = layer.elements.find(
+      (element) => element.name === "Steel Blue PP"
+    );
+
+    console.log(found);
+
+    return found;
   }
 
   for (let i = 0; i < total; i++) {

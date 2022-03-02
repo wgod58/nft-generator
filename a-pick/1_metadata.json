@@ -1,0 +1,63 @@
+[
+  {
+    "hash": "0614213741151361717811911041115",
+    "edition": 1,
+    "date": 1646244434468,
+    "attributes": [
+      {
+        "id": 6,
+        "trait_type": "background",
+        "value": "Orange",
+        "rarity": "normal"
+      },
+      {
+        "id": 4,
+        "trait_type": "skin",
+        "value": "Limestone",
+        "rarity": "normal"
+      },
+      {
+        "id": 1,
+        "trait_type": "cloth",
+        "value": "Black T-shirt",
+        "rarity": "normal"
+      },
+      {
+        "id": 7,
+        "trait_type": "necklace",
+        "value": "Silver Gold Feather Necklace",
+        "rarity": "normal"
+      },
+      {
+        "id": 13,
+        "trait_type": "eye",
+        "value": "Black Stare",
+        "rarity": "normal"
+      },
+      {
+        "id": 17,
+        "trait_type": "mouth",
+        "value": "Twig",
+        "rarity": "normal"
+      },
+      {
+        "id": 11,
+        "trait_type": "hair",
+        "value": "Black Two-Sided Quiff",
+        "rarity": "normal"
+      },
+      {
+        "id": 4,
+        "trait_type": "hand",
+        "value": "Pale Ivory",
+        "rarity": "normal"
+      },
+      {
+        "id": 15,
+        "trait_type": "watch",
+        "value": "Half Gold Black D-RL",
+        "rarity": "normal"
+      }
+    ]
+  }
+]

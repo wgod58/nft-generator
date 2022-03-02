@@ -1,0 +1,75 @@
+[
+  {
+    "hash": "041326324451617182931031124",
+    "edition": 2,
+    "date": 1646255405961,
+    "attributes": [
+      {
+        "id": 4,
+        "trait_type": "background",
+        "value": "Light Green",
+        "rarity": "normal"
+      },
+      {
+        "id": 3,
+        "trait_type": "skin",
+        "value": "Light Brown",
+        "rarity": "normal"
+      },
+      {
+        "id": 6,
+        "trait_type": "cloth",
+        "value": "White Shirt",
+        "rarity": "normal"
+      },
+      {
+        "id": 2,
+        "trait_type": "jacket",
+        "value": "Navy Blue Suit",
+        "rarity": "normal"
+      },
+      {
+        "id": 4,
+        "trait_type": "eye",
+        "value": "Black Directly",
+        "rarity": "normal"
+      },
+      {
+        "id": 1,
+        "trait_type": "tie",
+        "value": "Red Tie",
+        "rarity": "normal"
+      },
+      {
+        "id": 1,
+        "trait_type": "mouth",
+        "value": "Apathy",
+        "rarity": "normal"
+      },
+      {
+        "id": 2,
+        "trait_type": "glasses",
+        "value": "Red Round Sunglasses",
+        "rarity": "normal"
+      },
+      {
+        "id": 3,
+        "trait_type": "hair",
+        "value": "Fire Brick",
+        "rarity": "normal"
+      },
+      {
+        "id": 3,
+        "trait_type": "hand",
+        "value": "Light Brown",
+        "rarity": "normal"
+      },
+      {
+        "id": 24,
+        "trait_type": "watch",
+        "value": "Steel Blue PP",
+        "rarity": "normal"
+      }
+    ]
+  }
+]

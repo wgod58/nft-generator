@@ -1,0 +1,57 @@
+[
+  {
+    "hash": "01013213114151617383",
+    "edition": 1,
+    "date": 1646254382238,
+    "attributes": [
+      {
+        "id": 10,
+        "trait_type": "background",
+        "value": "Yellow",
+        "rarity": "normal"
+      },
+      {
+        "id": 3,
+        "trait_type": "skin",
+        "value": "Light Brown",
+        "rarity": "normal"
+      },
+      {
+        "id": 1,
+        "trait_type": "jacket",
+        "value": "Blue Kimono",
+        "rarity": "normal"
+      },
+      {
+        "id": 11,
+        "trait_type": "eye",
+        "value": "Black Raised Eyebrows",
+        "rarity": "normal"
+      },
+      {
+        "id": 1,
+        "trait_type": "mouth",
+        "value": "Apathy",
+        "rarity": "normal"
+      },
+      {
+        "id": 1,
+        "trait_type": "hair",
+        "value": "Red Faux Hawk",
+        "rarity": "normal"
+      },
+      {
+        "id": 3,
+        "trait_type": "hand",
+        "value": "Light Brown",
+        "rarity": "normal"
+      },
+      {
+        "id": 3,
+        "trait_type": "bracelet",
+        "value": "Brown Beaded Bracelet",
+        "rarity": "normal"
+      }
+    ]
+  }
+]
