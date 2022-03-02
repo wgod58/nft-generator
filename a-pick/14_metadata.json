@@ -1,0 +1,75 @@
+[
+  {
+    "hash": "03112535415246171785911011110",
+    "edition": 1,
+    "date": 1646256853674,
+    "attributes": [
+      {
+        "id": 3,
+        "trait_type": "background",
+        "value": "Green",
+        "rarity": "normal"
+      },
+      {
+        "id": 1,
+        "trait_type": "skin",
+        "value": "Beige",
+        "rarity": "normal"
+      },
+      {
+        "id": 5,
+        "trait_type": "cloth",
+        "value": "Red T-shirt",
+        "rarity": "normal"
+      },
+      {
+        "id": 5,
+        "trait_type": "necklace",
+        "value": "Silver Cross Necklace",
+        "rarity": "normal"
+      },
+      {
+        "id": 1,
+        "trait_type": "jacket",
+        "value": "Blue Denim Jacket",
+        "rarity": "normal"
+      },
+      {
+        "id": 24,
+        "trait_type": "eye",
+        "value": "Brown Innocent",
+        "rarity": "normal"
+      },
+      {
+        "id": 17,
+        "trait_type": "mouth",
+        "value": "Smile",
+        "rarity": "normal"
+      },
+      {
+        "id": 5,
+        "trait_type": "hair",
+        "value": "Walnut Short Cornrows",
+        "rarity": "normal"
+      },
+      {
+        "id": 1,
+        "trait_type": "earrings",
+        "value": "Black Cross Earrings",
+        "rarity": "normal"
+      },
+      {
+        "id": 1,
+        "trait_type": "hand",
+        "value": "Beige",
+        "rarity": "normal"
+      },
+      {
+        "id": 10,
+        "trait_type": "watch",
+        "value": "Black Gold PN",
+        "rarity": "normal"
+      }
+    ]
+  }
+]
