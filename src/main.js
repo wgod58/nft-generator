@@ -4,9 +4,6 @@ const console = require("console");
 const { layersOrder, format, rarities } = require("./config.js");
 const { Randomize } = require("./random");
 
-const canvas = createCanvas(format.width, format.height);
-const ctx = canvas.getContext("2d");
-
 if (!process.env.PWD) {
   process.env.PWD = process.cwd();
 }
@@ -126,8 +123,9 @@ const addAttributes = (_element, _layer) => {
   decodedHash.push({ [_layer.id]: _element.id });
 };
 
-const drawLayer = async (_layer, _edition) => {
+const drawLayer = async (_layer, _edition, _canvas) => {
   if (_layer.selectElement) {
+    const ctx = _canvas.getContext("2d");
     addAttributes(_layer.selectElement, _layer);
     const image = await loadImage(
       `${_layer.location}${_layer.selectElement.fileName}`
@@ -140,7 +138,7 @@ const drawLayer = async (_layer, _edition) => {
       _layer.size.width,
       _layer.size.height
     );
-    saveLayer(canvas, _edition);
+    saveLayer(_canvas, _edition);
   }
 };
 
@@ -172,8 +170,10 @@ const createFiles = async (edition) => {
       i--;
     } else {
       Exists.set(key, i);
+      const canvas = createCanvas(format.width, format.height);
+
       await selectLayers.forEach(async (_layer) => {
-        await drawLayer(_layer, i);
+        await drawLayer(_layer, i, canvas);
       });
       addMetadata(i);
       console.log("Creating edition " + i);

@@ -21,75 +21,13 @@ function shuffle(array) {
 }
 
 let skinChoseId;
+
 const Randomize = (layer) => {
   let total = layer.number;
   let considerList = [];
 
-  // console.log(layer);
-  // body layer.id = 1 layer.element[0] black
-  // layer.id === 8 hand
-
-  if (layer.name === "hand") {
+  if (layer.name === "head") {
     return layer.elements[skinChoseId - 1];
-  }
-
-  if (layer.name === "background") {
-    return layer.elements[3];
-  }
-  // if (layer.name === "bracelet") {
-  //   // console.log(layer);
-  //   return layer.elements[2];
-  // }
-  if (layer.name === "cloth") {
-    return layer.elements[5];
-  }
-  // if (layer.name === "earrings") {
-  //   return layer.elements[0];
-  // }
-  if (layer.name === "eye") {
-    const found = layer.elements.find(
-      (element) => element.name === "Black Directly"
-    );
-
-    console.log(found);
-    
-    return found;
-  }
-  // if (layer.name === "glasses") {
-  //   return layer.elements[3];
-  // }
-  // if (layer.name === "hair") {
-  //   return layer.elements[0];
-  // }
-  // if (layer.name === "hat") {
-  //   return layer.elements[2];
-  // }
-  if (layer.name === "jacket") {
-    return layer.elements[1];
-  }
-  if (layer.name === "mouth") {
-    // return layer.elements[3];
-    return layer.elements[0];
-  }
-  // if (layer.name === "necklace") {
-  //   return layer.elements[5];
-  // }
-  if (layer.name === "skin") {
-    const chose = layer.elements[2];
-    skinChoseId = chose.id;
-    return chose;
-  }
-  // if (layer.name === "tie") {
-  //   return layer.elements[2];
-  // }
-  if (layer.name === "watch") {
-    const found = layer.elements.find(
-      (element) => element.name === "Steel Blue PP"
-    );
-
-    console.log(found);
-
-    return found;
   }
 
   for (let i = 0; i < total; i++) {
